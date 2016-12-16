@@ -1,0 +1,5 @@
+<func(query string, args ...interface{}) (*database/sql.Rows, error); (*database/sql.DB).Query> -> _SINK_
+<func(query string, args ...interface{}) *database/sql.Rows; (*database/sql.DB).QueryRow> -> _SINK_
+<func(args ...interface{}) (*database/sql.Result, error); (*database/sql.DB).Query> -> _SINK_
+<func(format string, a ...interface{}) (int, error); fmt> -> _SINK_
+<func() string; goretech/comparison/sqlInjections.source> -> _SOURCE_
