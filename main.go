@@ -1,6 +1,6 @@
 package main
 
-import "goretech/comparison/sqlInjections"
+import "github.com/akwick/sqinco/sqlInjections"
 
 func main() {
 	// 10er examples
