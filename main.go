@@ -18,4 +18,6 @@ func main() {
 	sqlInjections.UnprepStmtDeclStringQueryRow()
 	sqlInjections.UnprepStmtFormatedString()
 	sqlInjections.UnprepStmtConstDeclSmallKeywords()
+	sqlInjections.WrappedFunc()
+	sqlInjections.NotQuerry()
 }

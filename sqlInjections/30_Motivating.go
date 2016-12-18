@@ -8,7 +8,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func UnprepStmtArg() {
+func SQLInjection() {
 	// Accessing a DB
 	db, err := sql.Open("mysql",
 		"user:password@tcp(127.0.0.1:3306)/test")
