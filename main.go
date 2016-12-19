@@ -4,7 +4,6 @@ import "github.com/akwick/sqinco/sqlInjections"
 
 func main() {
 	// 10er examples
-	sqlInjections.UnprepStmtArg()
 	sqlInjections.UnprepStmtConst()
 	sqlInjections.UnprepStmtConstDecl()
 	sqlInjections.UnprepStmtConstDeclUntypedString()
