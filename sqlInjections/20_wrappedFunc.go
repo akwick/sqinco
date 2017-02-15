@@ -22,6 +22,7 @@ func WrappedFunc() {
 	const s = "Lovely Gopher"
 
 	// Fetching Data from a Database
+	// @ExpectWarning false
 	rows, err := WrappedQuery("SELECT * FROM users WHERE id =", s)
 	if err != nil {
 		log.Fatal(err)

@@ -19,6 +19,7 @@ func UnprepStmtConstDeclSmallKeywords() {
 	s := "1"
 
 	// Fetching Data from a Database
+	// @ExpectWarning false
 	rows, err := db.Query("select * from users where id =" + s)
 	if err != nil {
 		log.Fatal(err)

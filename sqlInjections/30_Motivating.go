@@ -18,6 +18,7 @@ func SQLInjection() {
 	defer db.Close()
 
 	// Fetching Data from a Database
+	// @ExpectWarning true 
 	rows, err := db.Query("SELECT * FROM users WHERE id =" + os.Args[1])
 	if err != nil {
 		log.Fatal(err)

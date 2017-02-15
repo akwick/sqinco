@@ -19,5 +19,6 @@ func UnprepStmtDeclStringQueryRow() {
 	s := "1"
 
 	// Fetching Data from a Database
+	// @ExpectWarning false
 	_ = db.QueryRow("SELECT * FROM users WHERE id =" + s)
 }

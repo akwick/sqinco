@@ -17,6 +17,7 @@ func UnprepStmtConst() {
 	defer db.Close()
 
 	// Fetching data from the database
+	// @ExpectWarning false
 	rows, err := db.Query("SELECT * FROM users WHERE id =" + "1")
 	if err != nil {
 		fmt.Printf(err.Error())

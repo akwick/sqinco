@@ -19,6 +19,7 @@ func UnprepStmtConstDeclChangeAfterQueryFunCall() {
 	s := "1"
 
 	// Fetching Data from a Database
+	// @ExpectWarning false
 	rows, err := db.Query("SELECT * FROM users WHERE id =" + s)
 	if err != nil {
 		log.Fatal(err)
