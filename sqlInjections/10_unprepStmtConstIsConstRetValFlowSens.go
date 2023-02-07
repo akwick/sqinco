@@ -10,7 +10,7 @@ import (
 func UnprepStmtConstIsConstRetValFlowSens() {
 	// Accessing a DB
 	db, err := sql.Open("mysql",
-		"user:password@tcp(127.0.0.1:3306)/gophersAreLovely")
+		"user:password@127.0.0.1:3306/gophersAreLovely")
 	if err != nil {
 		log.Fatal(err)
 	}
